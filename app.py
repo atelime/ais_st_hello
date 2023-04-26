@@ -13,6 +13,10 @@ chart_data = pd.DataFrame(
 st.line_chart(chart_data)
 
 
+x = st.slider('x')  # 👈 this is a widget
+st.write(x, 'squared is', x * x)
+
+
 DATE_COLUMN = 'date/time'
 DATA_URL = ('https://s3-us-west-2.amazonaws.com/'
             'streamlit-demo-data/uber-raw-data-sep14.csv.gz')
